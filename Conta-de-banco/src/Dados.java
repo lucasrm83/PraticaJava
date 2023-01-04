@@ -15,6 +15,7 @@ public class Dados {
 
     public void iniciaConta(String sn){
         if sn.equals("s"){
+            setConta(0);
 
         }
     }
