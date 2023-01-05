@@ -3,6 +3,9 @@ public class Dados {
     public String usuario;
     public double conta;
 
+    public Dados(int numConta, String usuario) {
+    }
+
 
     public void deposito(double conta){
         this.conta += conta;
@@ -14,8 +17,8 @@ public class Dados {
     }
 
     public void iniciaConta(String sn){
-        if sn.equals("s"){
-            setConta(0);
+        if (sn.equals("s")){
+
 
         }
     }
@@ -44,5 +47,14 @@ public class Dados {
 
     public void setConta(double conta) {
         this.conta = conta;
+    }
+
+    @Override
+    public String toString() {
+        return "Dados{" +
+                "numConta=" + numConta +
+                ", usuario='" + usuario + '\'' +
+                ", conta=" + conta +
+                '}';
     }
 }
