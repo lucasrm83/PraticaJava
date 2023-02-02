@@ -3,7 +3,15 @@ public class Dados {
     public String usuario;
     public double conta;
 
+    public Dados(int numConta, String usuario, double conta) {
+        this.numConta = numConta;
+        this.usuario = usuario;
+        deposito(conta);
+
+    }
     public Dados(int numConta, String usuario) {
+        this.numConta = numConta;
+        this.usuario = usuario;
     }
 
 
@@ -13,15 +21,9 @@ public class Dados {
     }
 
     public void saque (double conta){
-        this.conta -=conta;
+        this.conta -=conta+ 5.0;
     }
 
-    public void iniciaConta(String sn){
-        if (sn.equals("s")){
-
-
-        }
-    }
 
 
 
@@ -29,9 +31,6 @@ public class Dados {
         return numConta;
     }
 
-    public void setNumConta(int numConta) {
-        this.numConta = numConta;
-    }
 
     public String getUsuario() {
         return usuario;
@@ -51,10 +50,9 @@ public class Dados {
 
     @Override
     public String toString() {
-        return "Dados{" +
-                "numConta=" + numConta +
-                ", usuario='" + usuario + '\'' +
-                ", conta=" + conta +
-                '}';
+        return "Dados: " +
+                "Numero da conta: " + numConta +
+                ", usuario: " + usuario +
+                ", Conta: " + conta;
     }
 }

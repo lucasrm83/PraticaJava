@@ -4,7 +4,7 @@ public class Main {
     public static void main (String [] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Numero da produto: ");
+        System.out.println("Nome do produto: ");
         String nome = sc.nextLine();
         System.out.println("Preco do produto: ");
         double preco = sc.nextDouble();
