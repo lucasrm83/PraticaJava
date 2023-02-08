@@ -31,9 +31,12 @@ public class Listas {
             System.out.println(i);
 
         }
+        
 
-        /*Não funciona por causa do ConcurrentModificatioException, por estar modificando uma lista que esta sendo lida*/
-        /*for (String n: lista) {
+        /*Não funciona por causa do ConcurrentModificatioException, por estar modificando uma lista que esta sendo lida
+        * Apesar de serem listas diferentes, apontam para o mesmo heap*/
+        /*List<String> apagar = lista;
+        for (String n: apagar) {
             System.out.println(n);
             if (n.charAt(0) == 'R'){
                 lista.remove(n);
@@ -44,6 +47,10 @@ public class Listas {
 
 
         }*/
+        for (String i: lista) {
+            System.out.println(i);
+
+        }
         /*Mostra o indice comparando na lista*/
         System.out.println("Index of Rubinho: "+lista.indexOf("Rubinho"));
         /*Primeiro converte para stream, depois faz a operação lambda e depois volta para list usando o collect*/
@@ -57,6 +64,8 @@ public class Listas {
         /*Vai retornar o primeiro que comece com 'A', o find também tem o findall pra achar todos*/
         String nome = lista.stream().filter(x ->x.charAt(0)=='A').findFirst().orElse(null);
         /*System.out.println(nome);*/
+
+        System.out.println("-----------");
 
 
 
