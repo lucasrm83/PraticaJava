@@ -19,6 +19,8 @@ public class Main {
 
             }
 
+            //Testando manipulações diferentes
+
             /*boolean teste = lista.contains(id);
             System.out.println(teste);*/
             /*while (lista.contains(id) == true){
@@ -42,8 +44,9 @@ public class Main {
         System.out.println("Digite o id a ser depositado: ");
         int idDeposito = sc.nextInt();
         Funcionario func = lista.stream().filter(x ->x.getId()==idDeposito).findFirst().orElse(null);
+
         if (func==null){
-            System.out.println("Id inexistenten! ");
+            System.out.println("Id inexistentente! ");
         }else {
             System.out.println("Digite a porcentagem do aumento: ");
             Double aumento = sc.nextDouble();
@@ -51,15 +54,22 @@ public class Main {
 
         }
 
+        //Parte de busca sem usar lambda
+        /*
+        Integer pos =posicao(lista,idDeposito);
+        if (pos==null){
+            System.out.println("Id inexistentente! ");
+        }else {
+            System.out.println("Digite a porcentagem do aumento: ");
+            Double aumento = sc.nextDouble();
+            lista.get(pos).aumentoSalario(aumento);
+
+        }*/
 
         for (Funcionario f:lista) {
             System.out.println(f);
 
         }
-
-
-
-
 
 
 
@@ -69,6 +79,17 @@ public class Main {
         return func != null;
 
     }
+    /*Busca por id sem usar lambda*/
+    public static Integer posicao(List<Funcionario>lista,int id){
+        for (int i = 0; i <lista.size() ; i++) {
+            if (lista.get(i).getId()==id){
+                return i;
+            }
+        }
+        return null;
+
+    }
+
 
 
 }
