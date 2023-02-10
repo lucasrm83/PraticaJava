@@ -3,9 +3,12 @@ import java.util.Scanner;
 public class ExercicioMatrizes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o número de linhas: ");
         int l = sc.nextInt();
+        System.out.println("Digite o número de colunas: ");
         int c = sc.nextInt();
         int[][] mat = new int[l][c];
+        System.out.println("Digite os números da matriz: ");
 
         for (int i = 0; i <mat.length ; i++) {
             for (int j = 0; j < mat[i].length; j++) {
@@ -14,12 +17,13 @@ public class ExercicioMatrizes {
             }
 
         }
+        System.out.println("Digite o número a ser buscado: ");
         int x =sc.nextInt();
 
         for (int i = 0; i <mat.length ; i++) {
             for (int j = 0; j < mat[i].length; j++) {
                 if (mat[i][j] ==x){
-                    System.out.println("Posição: "+  i+","+j);
+                    System.out.println("Posição: "+  i+","+j+":");
                     if (j!=0){
                         System.out.println("Esquerda: "+mat[i][j-1]);
                     }
