@@ -10,9 +10,9 @@ public class PraticaDatas {
         Instant d03 = Instant.parse("2022-07-20T01:30:26Z");
 
         //Mais e menos uma semana com datetime
-        LocalDateTime = menosUmaSemanaDateTime = d01.minusDays(7);
-        LocalDateTime maisUmaSemanaDateTime;
-        LocalDateTime = maisUmaSemanaDateTime = d01.plusDays(7);
+        //LocalDateTime = menosUmaSemanaDateTime = d01.minusDays(7);
+
+        //LocalDateTime = maisUmaSemanaDateTime = d01.plusDays(7);
 
         //Mais e menos uma semana com local date
         LocalDate menosUmaSemanaDate = d02.minusDays(7);
