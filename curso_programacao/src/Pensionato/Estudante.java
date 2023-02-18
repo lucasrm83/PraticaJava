@@ -1,3 +1,5 @@
+package Pensionato;
+
 public class Estudante {
     String nome;
     String email;

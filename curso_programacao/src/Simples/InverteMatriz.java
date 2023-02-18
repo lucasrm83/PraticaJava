@@ -1,3 +1,5 @@
+package Simples;
+
 import java.util.Scanner;
 
 public class InverteMatriz {
@@ -8,7 +10,7 @@ public class InverteMatriz {
         int l = sc.nextInt();
         System.out.println("Digite o número de colunas: ");
         int c = sc.nextInt();
-        System.out.println("Matriz normal");*/
+        System.out.println("Simples.Matriz normal");*/
 
         int[][] mat = {{1,2,3},{4,5,6},{7,8,9}};
         for (int i = 0; i <mat.length ; i++) {
@@ -36,7 +38,7 @@ public class InverteMatriz {
 
 
         }
-        System.out.println("Matriz inversa");
+        System.out.println("Simples.Matriz inversa");
         for (int i = 0; i <matinversa.length ; i++) {
             for (int j = 0; j < matinversa[i].length; j++) {
                 System.out.print(matinversa[i][j]+"\t");

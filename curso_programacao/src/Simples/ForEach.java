@@ -1,3 +1,5 @@
+package Simples;
+
 public class ForEach {
     public static void main(String[] args) {
         String[] frutas = new String[] {"Manga","Banana","Maçã","Uva"};

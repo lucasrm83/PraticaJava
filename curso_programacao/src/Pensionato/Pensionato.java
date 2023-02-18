@@ -1,3 +1,5 @@
+package Pensionato;
+
 import java.util.Scanner;
 
 public class Pensionato {

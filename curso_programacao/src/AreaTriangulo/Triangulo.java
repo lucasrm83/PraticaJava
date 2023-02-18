@@ -1,3 +1,5 @@
+package AreaTriangulo;
+
 public class Triangulo {
     public double a, b, c;
     public double Soma(){
