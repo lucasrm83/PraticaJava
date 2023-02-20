@@ -1,9 +1,11 @@
 package Trabalhador;
 
 public class Worker {
-    String name;
-    WorkerLevel level;
-    Double baseSalary;
+    private String name;
+    private WorkerLevel level;
+    private Double baseSalary;
+
+    private Department department;
 
     public void addContract(HourContract contract){
 
