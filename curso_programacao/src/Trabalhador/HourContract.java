@@ -7,7 +7,8 @@ public class HourContract {
     Double valuePerHour;
     Integer hours;
 
-    public double totalValue{
+    public double totalValue(){
+        return valuePerHour*hours;
 
     }
 }
