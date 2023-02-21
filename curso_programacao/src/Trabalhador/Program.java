@@ -56,6 +56,8 @@ public class Program {
         System.out.println("Name: "+worker.getName());
         System.out.println("Department: "+ worker.getDepartment().getName());
         System.out.println("Income for "+monthAndYear+ ": "+ String.format("%.2f",worker.income(year,month)));
+        //Sugestão: Adicionar listar todos os contratos por nome do trabalhador
+        //System.out.println("Worker name to be searched: ");
 
 
 
