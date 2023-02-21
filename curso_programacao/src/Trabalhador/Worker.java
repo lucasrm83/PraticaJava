@@ -23,6 +23,8 @@ public class Worker {
         this.department = department;
 
     }
+    //NOTA SOBRE CONSTRUTOR
+    //Não gere o get e set de lista, porque a lista pode ser trocada por outra lista
 
     public String getName() {
         return name;
@@ -64,13 +66,19 @@ public class Worker {
         contracts.remove(contract);
 
     }
+    //Calculando o Income pelas datas usando calendar
     public double income(Integer year,Integer month){
+        //pega o basesalary local
         double sum = baseSalary;
         Calendar cal = Calendar.getInstance();
+        //Varre a lista de contratos
         for (HourContract c: contracts) {
+            //adiciona a data de c ao calendar teporário a cada iteração
             cal.setTime(c.getData());
+            //pega o ano e mes de cada item na lista
             int c_year = cal.get(Calendar.YEAR);
             int c_month = cal.get(Calendar.MONTH);
+            //Compara se ambas as condições são atendidas, se sim soma
             if (year == c_year && month == c_month){
                 sum+= c.totalValue();
             }

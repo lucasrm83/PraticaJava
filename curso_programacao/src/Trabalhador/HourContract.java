@@ -7,6 +7,7 @@ public class HourContract {
     Double valuePerHour;
     Integer hours;
 
+    //Retorna o valor total multiplicando o valor por hora pelas horas
     public double totalValue(){
         return valuePerHour*hours;
 
