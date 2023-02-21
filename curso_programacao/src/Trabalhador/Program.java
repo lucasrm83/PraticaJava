@@ -24,7 +24,8 @@ public class Program {
 
         System.out.println("How many contracts to this worker: ");
         int n = sc.nextInt();
-        for (int i = 1; i < n; i++) {
+        //O I começou com 1 pq a comparação é menor ou igual
+        for (int i = 1; i <= n; i++) {
             System.out.println("Enter contract #"+i+" data: ");
             System.out.println("Date (DD/MM/YYYY): ");
             Date contractDate = sdf.parse(sc.next());
@@ -45,6 +46,9 @@ public class Program {
         int month = Integer.parseInt(monthAndYear.substring(0,2));
         //vai recortar do 3 em diante
         int year = Integer.parseInt(monthAndYear.substring(3));
+        System.out.println("Name: "+worker.getName());
+        System.out.println("Department: "+ worker.getDepartment().getName());
+        System.out.println("Income for "+monthAndYear+ ": "+ String.format("%.2f",worker.income(year,month)));
 
 
 
