@@ -25,7 +25,8 @@ public class Main {
             System.out.println("Product price: ");
             Double productPrice =sc.nextDouble();
             System.out.println("Quantity: ");
-            Integer producQuantity = sc.nextInt();
+            Integer productQuantity = sc.nextInt();
+            Product p = new Product(productName, productPrice);
 
 
         }
