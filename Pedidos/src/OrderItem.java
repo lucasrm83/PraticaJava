@@ -3,8 +3,18 @@ public class OrderItem {
     private Double price;
 
     public OrderItem() {
+
     }
+
+    public OrderItem(Integer quantity, Double price, Product product) {
+        this.quantity = quantity;
+        this.price = price;
+        this.product = product;
+    }
+
+
     private Product product;
+
 
     public Double subTotal(){
         double sum;
