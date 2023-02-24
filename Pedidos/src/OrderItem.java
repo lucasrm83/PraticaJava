@@ -4,10 +4,19 @@ public class OrderItem {
 
     public OrderItem() {
     }
+    private Product product;
 
-    public Double subTotal(int quantity,int price){
+    public Double subTotal(){
         double sum;
         return sum =quantity*price;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     public OrderItem(Integer quantity, Double price) {
@@ -30,4 +39,16 @@ public class OrderItem {
     public void setPrice(Double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getProduct().getName()+", $");
+        sb.append(String.format("%.2f", price));
+        sb.append(", Quantity: "+quantity);
+        sb.append(", Subtotal: $"+String.format("%.2f",subTotal()));
+        return sb.toString();
+
+    }
+
 }
