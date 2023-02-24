@@ -5,6 +5,7 @@ import java.util.List;
 public class Order {
     private Date moment;
     private OrderStatus status;
+    private Client client;
 
     private List<OrderItem> items = new ArrayList<>();
 
@@ -17,6 +18,16 @@ public class Order {
     }
 
     //Parei no calculo do total
+    public double total(){
+        double sum = 0;
+        for (OrderItem it: items) {
+            sum+=it.subTotal();
+
+        }
+        return sum;
+
+
+    }
 
     public Order() {
     }
