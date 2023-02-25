@@ -26,6 +26,7 @@ public class Main {
         //Enums devem ser digitados da exata maneira como específicado na classe
         OrderStatus clientStatus = OrderStatus.valueOf(sc.next());
         //O objeto order é instanciado antes do for porque não é necessário fazer para cada loop
+        //Na sua instanciação é composto de outro objeto, no caso o client
         Order order = new Order(new Date(),clientStatus,client);
         System.out.println("How many items to this order: ");
         int n = sc.nextInt();
@@ -39,13 +40,15 @@ public class Main {
             System.out.println("Quantity: ");
             Integer productQuantity = sc.nextInt();
             Product product = new Product(productName, productPrice);
+            //Outro exemplo de composição é em orderitem, que é composto por product
             OrderItem it = new OrderItem(productQuantity,productPrice,product);
+            //É aqui que acontece a conexão entre orderitem e order
             order.addItem(it);
 
 
         }
         System.out.println(order);
-        // Falta a parte de retorno do sistema
+
 
 
 
