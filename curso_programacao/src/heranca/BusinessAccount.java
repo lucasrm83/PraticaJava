@@ -20,6 +20,10 @@ public class BusinessAccount extends Account{
         this.loanlimit = loanlimit;
     }
     public void loan(double amount){
+        if (amount<= loanlimit){
+            deposit(amount);
+        }
+
 
 
     }
