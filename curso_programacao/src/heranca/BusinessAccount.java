@@ -3,6 +3,11 @@ package heranca;
 public class BusinessAccount extends Account{
     private Double loanlimit;
 
+    public BusinessAccount(Integer number, String holder, Double balance, Double loanlimit) {
+        super(number, holder, balance);
+        this.loanlimit = loanlimit;
+    }
+
     public Double getLoanlimit() {
         return loanlimit;
     }
@@ -11,14 +16,8 @@ public class BusinessAccount extends Account{
         this.loanlimit = loanlimit;
     }
 
-    public BusinessAccount(Double loanlimit) {
-        this.loanlimit = loanlimit;
-    }
 
-    public BusinessAccount(Integer number, String holder, Double balance, Double loanlimit) {
-        super(number, holder, balance);
-        this.loanlimit = loanlimit;
-    }
+
 
     public void loan(double amount){
         if (amount<= loanlimit){
@@ -27,6 +26,12 @@ public class BusinessAccount extends Account{
 
 
 
+
+    }
+    @Override
+    public void withdraw(double amount){
+        super.withdraw(amount);
+        balance -=2.0;
 
     }
 
