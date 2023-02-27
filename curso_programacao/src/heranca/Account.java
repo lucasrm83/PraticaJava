@@ -5,6 +5,9 @@ public class Account {
     private String holder;
     protected Double balance;
 
+    //private  BusinessAccount businessAccount;
+
+
 
     public Account() {
     }
@@ -48,6 +51,12 @@ public class Account {
 
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Account{" +
+                "number=" + number +
+                ", holder='" + holder + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

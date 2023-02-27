@@ -26,5 +26,14 @@ public class BusinessAccount extends Account{
 
 
 
+
+    }
+
+    @Override
+    public String toString() {
+        return "BusinessAccount{" +
+                "loanlimit=" + loanlimit +
+                ", balance=" + balance +
+                '}';
     }
 }
