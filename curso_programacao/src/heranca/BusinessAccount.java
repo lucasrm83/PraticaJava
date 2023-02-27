@@ -19,6 +19,7 @@ public class BusinessAccount extends Account{
         super(number, holder, balance);
         this.loanlimit = loanlimit;
     }
+
     public void loan(double amount){
         if (amount<= loanlimit){
             deposit(amount);
