@@ -10,10 +10,10 @@ public class Individual extends Person{
     @Override
     public double juros() {
         if (getAnualIncome()<20000){
-            return getAnualIncome()*0.15+healthExpenditures*0.50;
+            return getAnualIncome()*0.15-healthExpenditures*0.50;
         }
         else {
-            return getAnualIncome()*25+healthExpenditures*0.50;
+            return getAnualIncome()*0.25-healthExpenditures*0.50;
         }
     }
 
