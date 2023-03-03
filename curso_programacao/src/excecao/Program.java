@@ -7,6 +7,7 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         String[] vector = sc.nextLine().split(" ");
         int position = sc.nextInt();
+        System.out.println(vector[position]);
 
     }
 }
