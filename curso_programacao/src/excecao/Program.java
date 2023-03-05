@@ -6,8 +6,12 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) {
         System.out.println("Start");
-        metodo2();
+        metodo1();
 
+    }
+    public  static void metodo1(){
+        System.out.println("Metodo1 start");
+        metodo2();
     }
     public static void metodo2(){
         Scanner sc = new Scanner(System.in);
@@ -18,6 +22,7 @@ public class Program {
         }
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("Invalid position");
+            e.printStackTrace();
         }
         catch (InputMismatchException e){
             System.out.println("Input error:");
