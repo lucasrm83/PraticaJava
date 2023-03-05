@@ -27,7 +27,10 @@ public class Program {
         catch (InputMismatchException e){
             System.out.println("Input error:");
         }
-        System.out.println("End");
+        finally {
+            System.out.println("End");
+        }
+
 
 
 
