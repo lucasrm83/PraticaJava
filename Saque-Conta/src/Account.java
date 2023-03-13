@@ -18,7 +18,13 @@ public class Account {
         balance+=value;
 
     }
-    public void withdraw(double value){
+    public void withdraw(double value)throws WithdrawException{
+        if (value>withdrawLimit){
+            throw new WithdrawException(" The amount exceed the withdraw limit");
+        }
+        if (value>balance){
+            throw new WithdrawException(" Not enough balance");
+        }
         balance-=value;
 
 
