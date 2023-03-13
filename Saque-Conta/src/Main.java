@@ -7,7 +7,7 @@ public class Main {
             System.out.println("Enter acount Data ");
             System.out.print("Number: ");
             int number = sc.nextInt();
-            sc.next();
+            sc.nextLine();
             System.out.print("Holder: ");
             String holder = sc.nextLine();
             System.out.print("Initial Balance: ");
