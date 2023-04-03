@@ -24,6 +24,9 @@ public class Main {
         catch (WithdrawException e){
             System.out.println("Withdraw error: "+e.getMessage());
         }
+        catch(RuntimeException e){
+            System.out.println("Unexpected Error!");
+        }
 
 
 
