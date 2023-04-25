@@ -19,13 +19,16 @@ public class MathOps {
 
     //e
 
-    if ((x==1) && (x>0){
+    /*if ((x==1) && (x>0){
+        System.out.println();
 
     }
     //or
     if ((x==1) || (x>0)){
 
     }
+
+     */
 
 
 
