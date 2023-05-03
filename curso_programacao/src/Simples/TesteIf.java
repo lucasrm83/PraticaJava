@@ -7,14 +7,13 @@ public class TesteIf {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
 
-        if(x<20){
-            x+=1;
+        if(x<21){
             System.out.println(x);
         }
-        while (x!=13){
-            System.out.println("Erro!");
-            x=sc.nextInt();
+        if (x==20) {
+            System.out.println("cheguei");
 
         }
+
     }
 }
