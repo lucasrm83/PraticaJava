@@ -37,9 +37,17 @@ public class Operadores {
         double playstationValue = 2500;
 
         boolean isPlaystationBuyable = contaCorrente>= playstationValue || contaPoupança>=playstationValue;
-        System.out.println(isPlaystationBuyable);
+        //System.out.println(isPlaystationBuyable);
 
         //= += -= *= %=
+
+        double bonus = 1800;
+        bonus+=1000;
+        bonus-=1000;
+        bonus*=2;
+        bonus/=2;
+        bonus%=2;
+
 
 
     }
