@@ -1,4 +1,4 @@
-package primitivos;
+package devDojo.primitivos;
 
 public class TiposPrimitivos {
     public static void main(String[] args) {
