@@ -5,7 +5,7 @@ public class Operadores {
         //+ - / *
         int numero1 = 10;
         int numero2 = 20;
-        System.out.println(numero2+numero1+" é o resultado! "+numero1+numero2);
+        //System.out.println(numero2+numero1+" é o resultado! "+numero1+numero2);
         //a partir do momento que o java detecta a concatenação de ints com strings, os proximos "+" irão concatenar
         // e não somar, então fique esperto
         double multiplicacao = numero1*numero2;
@@ -23,6 +23,24 @@ public class Operadores {
         //< > <= >= == !=
         int num = 1;
         boolean isthislessthanzero = 1<0;
-        System.out.println(isthislessthanzero);
+        //System.out.println(isthislessthanzero);
+
+        // &&(and) || (or)
+        int idade = 29;
+        double salario = 3500;
+        boolean isInLawGreaterThanThirty = idade <30 && salario <4612;
+        boolean isInLawLesserThanThirty = idade >30 && salario <3381;
+        //System.out.println(isInLawGreaterThanThirty);
+
+        double contaCorrente = 200;
+        double contaPoupança =10000;
+        double playstationValue = 2500;
+
+        boolean isPlaystationBuyable = contaCorrente>= playstationValue || contaPoupança>=playstationValue;
+        System.out.println(isPlaystationBuyable);
+
+        //= += -= *= %=
+
+
     }
 }
