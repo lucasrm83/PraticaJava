@@ -13,6 +13,8 @@ public class TiposPrimitivos {
         boolean verdadeiro = true;
         boolean falso = false;
         char caractere = 'W';
+        String nome = "String não tem um limite de caracteres estabelecido";
+        // String é uma classe, por isso o uso difere dos tipos primitivos
 
     }
 }
