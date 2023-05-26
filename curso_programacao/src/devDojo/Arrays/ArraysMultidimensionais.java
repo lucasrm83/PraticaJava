@@ -12,6 +12,14 @@ public class ArraysMultidimensionais {
             System.out.println();
 
         }
+        System.out.println("-------------------");
+        for (int[] arrBase:dias) {
+            for (int num:arrBase){
+                System.out.print(num+"\t");
+            }
+            System.out.println();
+
+        }
 
     }
 }
