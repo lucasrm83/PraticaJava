@@ -1,4 +1,4 @@
-package devDojo.orientacaoaobjetos;
+package devDojo.orientacaoaobjetos.dominio;
 
 public class Estudante {
     public String nome;

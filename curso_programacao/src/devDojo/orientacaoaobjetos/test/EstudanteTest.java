@@ -1,4 +1,6 @@
-package devDojo.orientacaoaobjetos;
+package devDojo.orientacaoaobjetos.test;
+
+import devDojo.orientacaoaobjetos.dominio.Estudante;
 
 public class EstudanteTest {
     public static void main(String[] args) {
