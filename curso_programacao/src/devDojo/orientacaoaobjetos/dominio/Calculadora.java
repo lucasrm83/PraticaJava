@@ -17,4 +17,22 @@ public class Calculadora {
         }
         return a/b;
     }
+    public void somaArray(int[] arr){
+        int sum=0;
+        for (int num:arr) {
+            sum+=num;
+
+        }
+        System.out.println(sum);
+    }
+    //o argumento na chamada de metodo pode ser varios ints, não precisa ser um array
+    public void somaVarArgs(int... nums){
+        int sum =0;
+        for (int num:nums) {
+            sum+=num;
+
+        }
+        System.out.println(sum);
+
+    }
 }
