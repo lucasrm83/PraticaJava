@@ -6,6 +6,9 @@ public class Anime {
     private int ano;
     private String genero;
     private String estudio;
+    {
+        System.out.println("Executa primeiro");
+    }
 
     public Anime(String nome, int episodios, int ano, String genero) {
         this();
