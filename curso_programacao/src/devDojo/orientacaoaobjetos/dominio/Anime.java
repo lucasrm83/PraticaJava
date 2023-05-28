@@ -6,16 +6,14 @@ public class Anime {
     private int ano;
     private String genero;
 
-    public void init(String nome, int episodios, int ano){
+    public Anime(String nome, int episodios, int ano, String genero) {
         this.nome = nome;
         this.episodios = episodios;
         this.ano = ano;
-
-    }
-
-    public void init(String nome, int episodios, int ano, String genero) {
-        this.init(nome, episodios, ano);
         this.genero = genero;
+    }
+    public Anime(){
+
     }
 
     public void imprime(){
