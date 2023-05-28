@@ -60,8 +60,6 @@ public class Funcionario {
         return media;
     }
 
-    public void setMedia(double media) {
-        this.media = media;
-    }
+
 
 }
