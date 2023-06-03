@@ -11,6 +11,7 @@ public class ClienteTest {
 
         System.out.println(cliente1);
         System.out.println(cliente2);
+        System.out.println(TipoPagamento.DEBITO.calcularDesconto(100));
 
     }
 }
