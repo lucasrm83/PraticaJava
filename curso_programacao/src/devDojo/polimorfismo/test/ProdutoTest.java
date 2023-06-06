@@ -1,6 +1,7 @@
 package devDojo.polimorfismo.test;
 
 import devDojo.polimorfismo.dominio.Computador;
+import devDojo.polimorfismo.dominio.Produto;
 import devDojo.polimorfismo.dominio.Tomate;
 import devDojo.polimorfismo.servico.CalculadoraImposto;
 
@@ -11,6 +12,7 @@ public class ProdutoTest {
         CalculadoraImposto.calculaImpostoComputador(computador);
         System.out.println("--------");
         CalculadoraImposto.calculaImpostoTomate(tomate);
+        Produto produto = new Computador("Lenovo 330",2500);
 
 
     }
