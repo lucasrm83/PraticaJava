@@ -9,7 +9,7 @@ import devDojo.polimorfismo.servico.CalculadoraImposto;
 public class ProdutoTest {
     public static void main(String[] args) {
         Computador computador = new Computador("Acer nitro 5",5000);
-        Tomate tomate = new Tomate("Tomate vermelho",10);
+        Tomate tomate = new Tomate("Tomate vermelho",13,"12/06/23");
         CalculadoraImposto.calcularImposto(computador);
         System.out.println("--------");
         CalculadoraImposto.calcularImposto(tomate);

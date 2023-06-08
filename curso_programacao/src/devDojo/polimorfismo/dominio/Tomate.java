@@ -1,7 +1,7 @@
 package devDojo.polimorfismo.dominio;
 
 public class Tomate extends Produto{
-    public static final double IMPOSTO_POR_CENTO =0.86;
+    public static final double IMPOSTO_POR_CENTO =0.08;
     public String validade;
 
     public String getValidade() {
@@ -12,8 +12,9 @@ public class Tomate extends Produto{
         this.validade = validade;
     }
 
-    public Tomate(String nome, double valor) {
+    public Tomate(String nome, double valor,String validade) {
         super(nome, valor);
+        this.validade =validade;
     }
     @Override
     public double calculaImposto() {
