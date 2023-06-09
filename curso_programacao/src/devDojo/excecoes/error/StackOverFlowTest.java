@@ -1,4 +1,4 @@
-package devDojo.excecoes.test;
+package devDojo.excecoes.error;
 
 public class StackOverFlowTest {
     public static void main(String[] args) {
