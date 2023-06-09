@@ -7,4 +7,7 @@ public class ArquivoService implements Repositorio {
     public void salvar() {
         System.out.println("Salvo em arquivo");
     }
+    public void relatorioArquivo(){
+        System.out.println("Arquivo 70% cheio!");
+    }
 }
