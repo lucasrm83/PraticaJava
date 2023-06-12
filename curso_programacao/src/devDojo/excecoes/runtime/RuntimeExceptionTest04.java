@@ -11,9 +11,22 @@ public class RuntimeExceptionTest04 {
 
 
         }catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("Index inexistente");
+            System.out.println("dentro de arraysindex");
+
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("dentro de indexoutof");
+
+        }catch (IllegalArgumentException e){
+            System.out.println("dentro de illegalargument");
+
+        }catch (ArithmeticException e){
+            System.out.println("dentro de arithimeticexception");
 
         }
+
+
+
+
 
 
 
