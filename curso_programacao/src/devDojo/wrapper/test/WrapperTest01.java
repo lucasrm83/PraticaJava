@@ -20,6 +20,8 @@ public class WrapperTest01 {
         Character charW = 'L';
         Boolean booleanW = false;
 
+        int i= intW; //unboxing
+
 
     }
 }
