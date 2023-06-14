@@ -8,7 +8,7 @@ public class Program {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyy HH:mm:ss");
 
         Comment c1 = new Comment("Have a nice trip bro!");
-        Comment c2 = new Comment("Wow that's awesome!");
+        Comment c2 = new Comment("Enjoy it!");
         Post p1 = new Post(sdf.parse("21/06/2018 13:05:44"),"Travelling to new Zeland",
                 "Im going to visits this wornderfull conuntry", 12);
         p1.addComment(c1);
