@@ -4,25 +4,25 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
 
-public class NumberFormat01 {
+public class NumberFormat02 {
     public static void main(String[] args) {
         NumberFormat[] nfa = new NumberFormat[4];
         Locale localeUS =Locale.US;
         Locale localeJP = Locale.JAPAN;
         Locale localeIT = Locale.ITALY;
-        nfa[0] = NumberFormat.getInstance();
-        nfa[1] = NumberFormat.getInstance(localeUS);
-        nfa[2] = NumberFormat.getInstance(localeJP);
-        nfa[3] = NumberFormat.getInstance(localeIT);
-        double valor = 1_000.2130;
+        nfa[0] = NumberFormat.getCurrencyInstance();
+        nfa[1] = NumberFormat.getCurrencyInstance(localeUS);
+        nfa[2] = NumberFormat.getCurrencyInstance(localeJP);
+        nfa[3] = NumberFormat.getCurrencyInstance(localeIT);
+        double valor = 10_000.2130;
         for (NumberFormat numberFormat: nfa){
-            numberFormat.setMaximumFractionDigits(2);
             System.out.println(numberFormat.getMaximumFractionDigits());
             System.out.println(numberFormat.format(valor));
+
         }
-        String valorString = "1000.2130";
+        String valorString = "￥10,000";
         try {
-            System.out.println(nfa[0].parse(valorString));
+            System.out.println(nfa[2].parse(valorString));
         } catch (ParseException e) {
             e.printStackTrace();
         }
