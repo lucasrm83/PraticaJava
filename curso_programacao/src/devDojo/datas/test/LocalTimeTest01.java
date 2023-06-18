@@ -15,5 +15,6 @@ public class LocalTimeTest01 {
         System.out.println(time.get(ChronoField.HOUR_OF_DAY));
         System.out.println(LocalTime.MIN);
         System.out.println(LocalTime.MAX);
+        System.out.println(LocalTime.MIDNIGHT);
     }
 }
