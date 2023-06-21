@@ -11,6 +11,7 @@ public class Arrays {
         imprimeArrays(nums2);
 
 
+
     }
     public static void imprimeArrays(int[]arr){
         for (int num:arr) {
