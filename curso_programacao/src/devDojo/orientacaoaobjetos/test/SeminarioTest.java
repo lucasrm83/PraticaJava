@@ -16,7 +16,7 @@ public class SeminarioTest {
         Aluno aluno4 = new Aluno("Joao",28,seminario2);
         Aluno aluno5 = new Aluno("Antonio",32,seminario1);
         Aluno [] alunos1 = {aluno1,aluno2};
-        Aluno [] alunos2 = {aluno3,aluno4};
+        Aluno [] alunos2 = {aluno3,aluno4,aluno5};
         seminario1.setAlunos(alunos1);
         seminario2.setAlunos(alunos2);
         Seminario [] seminarios = {seminario1,seminario2};
