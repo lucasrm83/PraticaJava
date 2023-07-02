@@ -11,6 +11,15 @@ public class Person {
         this.account = account;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", account=" + account +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
@@ -34,4 +43,5 @@ public class Person {
     public void setAccount(Double account) {
         this.account = account;
     }
+
 }
