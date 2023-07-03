@@ -10,6 +10,9 @@ public class Person {
         this.age = age;
         this.account = account;
     }
+    public void tax(){
+        System.out.println("Tax payed: "+(account/12));
+    }
 
     @Override
     public String toString() {
