@@ -13,6 +13,9 @@ public class Person {
     public void tax(){
         System.out.println("Tax payed: "+(account/12));
     }
+    public void withdraw(double value){
+        this.account = account-value;
+    }
 
     @Override
     public String toString() {
