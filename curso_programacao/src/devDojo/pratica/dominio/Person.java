@@ -4,6 +4,7 @@ public class Person {
     String name;
     Integer age;
     Double account;
+    Person [] people;
 
     public Person(String name, Integer age, Double account) {
         this.name = name;
@@ -15,6 +16,14 @@ public class Person {
     }
     public void withdraw(double value){
         this.account = account-value;
+    }
+
+    public Person[] getPeople() {
+        return people;
+    }
+
+    public void setPeople(Person[] people) {
+        this.people = people;
     }
 
     @Override
