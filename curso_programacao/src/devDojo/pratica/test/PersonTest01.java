@@ -8,7 +8,9 @@ public class PersonTest01 {
         Person person2 = new Person("Roberto Carlos",22,320000.0);
         System.out.println(person1);
         person1.withdraw(5000);
+        person2.withdraw(200);
         System.out.println(person1);
+        System.out.println(person2);
         person1.tax();
 
     }
