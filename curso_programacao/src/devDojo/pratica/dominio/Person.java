@@ -4,7 +4,6 @@ public class Person {
     String name;
     Integer age;
     Double account;
-    Person [] people;
 
     public Person(String name, Integer age, Double account) {
         this.name = name;
@@ -12,7 +11,7 @@ public class Person {
         this.account = account;
     }
     public void tax(){
-        System.out.println("Tax payed: "+(account/12));
+        System.out.println("The tax value that "+this.name+" must pay is: "+(account*0.1));
     }
     public void withdraw(double value){
         this.account = account-value;
@@ -21,13 +20,6 @@ public class Person {
         this.account = account+value;
     }
 
-    public Person[] getPeople() {
-        return people;
-    }
-
-    public void setPeople(Person[] people) {
-        this.people = people;
-    }
 
     @Override
     public String toString() {

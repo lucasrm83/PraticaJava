@@ -11,6 +11,7 @@ public class PersonTest01 {
         System.out.println(person1);
         System.out.println(person2);
         person1.tax();
+        person2.tax();
 
     }
 }
