@@ -17,6 +17,9 @@ public class Person {
     public void withdraw(double value){
         this.account = account-value;
     }
+    public void deposit(double value){
+        this.account = account+value;
+    }
 
     public Person[] getPeople() {
         return people;
