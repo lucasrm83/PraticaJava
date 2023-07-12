@@ -8,5 +8,6 @@ public class TemporalAdjustersTest01 {
         now = now.withDayOfMonth(20);
         System.out.println(now);
         System.out.println(now.getDayOfWeek());
+        System.out.println(now.getDayOfMonth());
     }
 }
