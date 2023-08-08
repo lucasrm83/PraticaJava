@@ -1,9 +1,6 @@
-package gui;
+package gui.frames;
 
-import javax.swing.*;
-import java.awt.*;
-
-public class GuiTest {
+public class FrameMain {
     public static void main(String[] args) {
         /*JFrame frame = new JFrame(); //cria um frame
         frame.setTitle("Chess"); //muda o titulo do frame
