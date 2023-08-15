@@ -12,7 +12,7 @@ public class LabelMain {
 
         ImageIcon image = new ImageIcon("incog.png");
         JLabel label = new JLabel(); //create a label
-        label.setText("Bro, do you even code?"); //set text of label
+        label.setText("Eu vi o que você assistiu!"); //set text of label
         label.setIcon(image);
         label.setHorizontalTextPosition(JLabel.CENTER);//set text left, center, right of imageicon
         label.setVerticalTextPosition(JLabel.TOP); //set text top,center,bottom of imageicon
