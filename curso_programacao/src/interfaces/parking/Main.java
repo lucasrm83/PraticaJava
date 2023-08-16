@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatterBuilder;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args){
         DateTimeFormatter fmt =DateTimeFormatter.ofPattern("dd/MM/yyy HH:mm:ss");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter rental data: ");
