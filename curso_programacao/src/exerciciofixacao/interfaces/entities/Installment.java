@@ -6,6 +6,11 @@ public class Installment {
     private LocalDateTime dueDate;
     private Double amount;
 
+    public Installment(LocalDateTime dueDate, Double amount) {
+        this.dueDate = dueDate;
+        this.amount = amount;
+    }
+
     public LocalDateTime getDueDate() {
         return dueDate;
     }
