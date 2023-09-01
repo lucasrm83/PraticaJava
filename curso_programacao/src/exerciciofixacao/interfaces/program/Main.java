@@ -32,7 +32,7 @@ public class Main {
         sc.close();
 
         for (Installment i:contract.getInstallments()) {
-            System.out.println(i.getDueDate()+" - "+i.getAmount());
+            System.out.println(i.getDueDate().format(dtf)+" - "+i.getAmount());
 
         }
 
