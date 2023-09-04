@@ -1,11 +1,12 @@
 package interfaces.diamond;
 
-public class Device {
+public abstract class Device {
     private String serialNumber;
 
     public Device(String serialNumber) {
         this.serialNumber = serialNumber;
     }
+    public abstract void processDoc(String doc);
 
     public String getSerialNumber() {
         return serialNumber;
